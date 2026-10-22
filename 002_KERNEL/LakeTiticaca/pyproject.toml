@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "laketiticaca"
+version = "0.1.0"
+description = "LakeTiticaca — RealityStateOS Kernel-level AI (proprietary)."
+authors = [{ name = "Joseph Michael Rounsaville" }]
+license = { text = "Proprietary" }
+requires-python = ">=3.10"
+dependencies = [
+    "cryptography>=42.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["laketiticaca*"]
